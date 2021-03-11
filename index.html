@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .outer {
+            height: 400px;
+            width: 400px;
+            background: red;
+        }
+        .inner {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            height: 200px;
+            width: 200px;
+            background: green;
+            
+        }
+    </style>
+    <script>
+        function outer() {
+            alert('outer');
+        }
+        function inner() {
+            alert('inner');
+        }
+    </script>
+</head>
+<body>
+    <div class="outer" id="outer" onclick="outer()">
+        outer
+    </div>
+    <div class="inner" id="inner" onclick="inner()">
+        inner
+    </div>
+</body>
+</html>
